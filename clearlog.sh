@@ -4,4 +4,4 @@
 # Add the following to the crontab (i.e. crontab -e)
 # 0 0 */2 * * ~/smartnode/clearlog.sh
 
-echo "" > ~/.smartcash/debug.log
+/bin/date > ~/.smartcash/debug.log
