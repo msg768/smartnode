@@ -6,6 +6,7 @@
 1. Make sure the daemon is always running: *makerun.sh*
 2. Make sure the daemon is never stuck: *checkdaemon.sh*
 3. Make sure smartcash is always up-to-date: *upgrade.sh*
+4. Clear the log file every other day: *clearlog.sh*
 
 #### Login to your vps as root, donwload the install.sh file and then run it:
 ```
