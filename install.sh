@@ -91,6 +91,7 @@ wget https://raw.githubusercontent.com/msg768/smartnode/master/anti-ddos.sh
 wget https://raw.githubusercontent.com/msg768/smartnode/master/makerun.sh
 wget https://raw.githubusercontent.com/msg768/smartnode/master/checkdaemon.sh
 wget https://raw.githubusercontent.com/msg768/smartnode/master/upgrade.sh
+wget https://raw.githubusercontent.com/msg768/smartnode/master/clearlog.sh
 
 # Create a cronjob for making sure smartcashd is always running
 (crontab -l ; echo "*/1 * * * * ~/smartnode/makerun.sh") | crontab -
