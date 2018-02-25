@@ -8,6 +8,5 @@ if ps ax | grep -v grep | grep smartcashd > /dev/null
 then
   exit
 else
-  smartcashd && sleep 5 &
-  cpulimit -P /usr/bin/smartcashd -l 20 &
+  smartcashd
 fi
