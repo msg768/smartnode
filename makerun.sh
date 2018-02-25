@@ -2,14 +2,12 @@
 # makerun.sh
 # Make sure smartcashd is always running.
 # Add the following to the crontab (i.e. crontab -e)
-# */1 * * * * ~/smartnode/makerun.sh
+# */5 * * * * ~/smartnode/makerun.sh
 
-process=smartcashd
-makerun="smartcashd"
-
-if ps ax | grep -v grep | grep $process > /dev/null
+if ps ax | grep -v grep | grep smartcashd > /dev/null
 then
   exit
 else
-  $makerun &
+  smartcashd && sleep 5 &
+  cpulimit -P /usr/bin/smartcashd -l 20 &
 fi
