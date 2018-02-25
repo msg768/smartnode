@@ -11,6 +11,6 @@ smartcash-cli getblockcount > ~/smartnode/blockcount
 
 if [ "$previousBlock" == "$currentBlock" ]; then
   smartcash-cli stop && sleep 5
-  smartcashd& && sleep 5
-  cpulimit -P /usr/bin/smartcashd -l 20
+  smartcashd && sleep 5 &
+  cpulimit -P /usr/bin/smartcashd -l 20 &
 fi
