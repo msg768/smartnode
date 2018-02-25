@@ -10,3 +10,10 @@ then
 else
   smartcashd
 fi
+
+if ps -A | grep cpulimit > /dev/null
+then
+  exit
+else
+  cpulimit -P /usr/bin/smartcashd -l 20
+fi
