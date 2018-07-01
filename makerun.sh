@@ -11,5 +11,5 @@ fi
 
 if ! ps -A | grep cpulimit > /dev/null
 then
-  cpulimit -P /usr/bin/smartcashd -l 20
+  cpulimit -P /usr/bin/smartcashd -l 50
 fi
