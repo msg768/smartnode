@@ -1,6 +1,6 @@
-DEPRECATED: PLEASE USE https://github.com/smartcash/smartnode
+# DEPRECATED: PLEASE USE https://github.com/smartcash/smartnode
 
-# SmartNode
+## SmartNode
 ### Bash installer for smartnode on Ubuntu 16.04 LTS x64
 ### ATTENTION: This installer is only suitable for a dedicated vps. The anti-ddos script in this installer will disable all ports including the http, https and dns ports. It will only leave the smartnode port open as well as a custom port for SSH.
 
