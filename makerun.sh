@@ -9,7 +9,7 @@ then
   smartcashd
 fi
 
-if ! ps -A | grep cpulimit > /dev/null
+if ! ps -Af | grep cpulimit | grep smartcashd > /dev/null
 then
   cpulimit -P /usr/bin/smartcashd -l 50
 fi
